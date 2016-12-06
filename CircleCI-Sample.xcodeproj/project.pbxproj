@@ -194,6 +194,7 @@
 		EE8458551A5CF04400DB5D00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Poly's Factory";
 				TargetAttributes = {
