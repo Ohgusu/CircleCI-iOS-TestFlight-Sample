@@ -24,6 +24,7 @@ class CircleCI_SampleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+        sleep(3600)
     }
     
     func testPerformanceExample() {
