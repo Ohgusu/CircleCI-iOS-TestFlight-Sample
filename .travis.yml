@@ -2,4 +2,7 @@ language: objective-c
 xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
-cache: bundler
+cache: 
+	directories:
+     	- vendor/bundle
+        - Pods
