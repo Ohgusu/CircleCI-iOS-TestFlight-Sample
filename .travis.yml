@@ -11,7 +11,5 @@ before_install:
   - brew services start postgresql
   - brew install mysql
   - brew services start mysql
-env:
-  matrix:
-    - TEST_TARGET=test1
-    - TEST_TARGET=test2
+script:
+  - xctool -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -sdk iphonesimulator build test
