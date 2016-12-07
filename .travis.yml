@@ -4,4 +4,4 @@ xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
 cache: bundler
 script:
-  - sudo mysql start
+  - mysql start
