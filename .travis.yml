@@ -1,7 +1,4 @@
 language: objective-c
-sudo: required
-os: linux
-dist: linux
 xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
@@ -11,4 +8,6 @@ services:
   - postgresql
 before_install:
   - brew update
-  - psql -c 'create database travis_ci_test;' -U postgres
+  - brew install language-pack-es
+  - /etc/init.d/postgresql stop
+  - /etc/init.d/postgresql start 9.3
