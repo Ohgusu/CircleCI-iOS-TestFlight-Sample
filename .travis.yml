@@ -4,4 +4,4 @@ xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
 cache: bundler
 script:
-  - mysql start
+  - mysql -uroot -e "create database hoge"
