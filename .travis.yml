@@ -9,4 +9,4 @@ services:
 before_install:
   - brew update
   - brew services start postgresql
-  - brew services list
+  - mysql -uroot
