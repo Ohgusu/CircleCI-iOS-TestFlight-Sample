@@ -6,5 +6,5 @@ cache: bundler
 services:
   - mysql
   - postgresql
-before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test;'
