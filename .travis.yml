@@ -4,7 +4,7 @@ xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
 cache: bundler
 services:
-	- mysql
-	- postgresql
+  - mysql
+  - postgresql
 before_install:
-	- brew update
+  - brew update
