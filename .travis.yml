@@ -3,5 +3,7 @@ xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
 cache: bundler
+services:
+  - mysql
 script:
   - "sudo service mysql start"
