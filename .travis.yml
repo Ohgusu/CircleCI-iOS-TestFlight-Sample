@@ -2,6 +2,7 @@ language: objective-c
 xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
+osx_image: xcode7.3
 cache: bundler
 services:
   - mysql
