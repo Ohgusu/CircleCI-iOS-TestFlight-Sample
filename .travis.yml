@@ -4,13 +4,7 @@ xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
 cache: bundler
 services:
-  - mysql
-  - postgresql
+	- mysql
+	- postgresql
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libxml2-dev
-  - sudo apt-get update
-  - sudo apt-get install language-pack-es
-  - sudo /etc/init.d/postgresql stop
-  - sudo /etc/init.d/postgresql start 9.3
-  - psql -c 'create database travis_ci_test;' -U postgres
+	- brew update
