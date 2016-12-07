@@ -1,4 +1,6 @@
 language: objective-c
+os:
+    - linux
 xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
