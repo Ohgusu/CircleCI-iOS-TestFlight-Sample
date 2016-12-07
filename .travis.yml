@@ -1,6 +1,5 @@
 language: objective-c
-os:
-    - linux
+sudo: required
 xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
 xcode_sdk: iphonesimulator
