@@ -5,5 +5,5 @@ xcode_sdk: iphonesimulator
 cache: bundler
 services:
   - mysql
-before_install:
-  - mysql -e 'CREATE DATABASE myapp_test;'
+scripts:
+  - "sudo service mysql start"
