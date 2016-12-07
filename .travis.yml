@@ -12,4 +12,4 @@ before_install:
   - brew install mysql
   - brew services start mysql
 script:
-  - xctool -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -sdk iphonesimulator build test
+  - travis_wait 30 xctool -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -sdk iphonesimulator build test
