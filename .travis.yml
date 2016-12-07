@@ -1,8 +1,7 @@
 language: objective-c
 xcode_workspace: CircleCI-Sample.xcworkspace
 xcode_scheme: CircleCI-Sample
-xcode_sdk: iphonesimulator6
-osx_image: xcode7.3
+xcode_sdk: iphonesimulator
 cache: bundler
 services:
   - mysql
@@ -14,5 +13,8 @@ before_install:
   - brew services start mysql
 env:
   matrix:
-    - TEST_TARGET=test1
-    - TEST_TARGET=test2
+    include:
+      - os: osx
+        osx_image: xcode7.3
+      - os: osx
+        osx_image: xcode7.1
