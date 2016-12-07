@@ -13,7 +13,5 @@ before_install:
   - brew services start mysql
 env:
   matrix:
-    - TEST_TARGET=spec
-    - TEST_TARGET=cucumber
-script:
-  - "bundle exec rake $TEST_TARGET"
+    - TEST_TARGET=test1
+    - TEST_TARGET=test2
