@@ -9,4 +9,4 @@ services:
 before_install:
   - brew update
   - brew services start postgresql
-  - brew mysql.server start
+  - brew services start mysql
