@@ -8,6 +8,5 @@ services:
   - postgresql
 before_install:
   - brew update
-  - brew services stop postgresql
   - brew services start postgresql
   - brew info mysql
