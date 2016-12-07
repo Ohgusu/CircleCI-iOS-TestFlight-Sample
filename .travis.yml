@@ -8,6 +8,7 @@ services:
   - postgresql
 before_install:
   - brew update
+  - brew services stop postgresql
+  - brew services stop mysql
   - brew services start postgresql
-before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+  - brew services start mysql
