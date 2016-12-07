@@ -11,3 +11,4 @@ before_install:
   - brew services start postgresql
   - brew install mysql
   - brew services start mysql
+install : bundle install --jobs=2
