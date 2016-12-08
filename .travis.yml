@@ -19,4 +19,4 @@ matrix:
       osx_image: xcode7.3
       env: TEST_SUITE=suite_7_3
 script:
-  - xcodebuild -version
+  - sudo start ssh
